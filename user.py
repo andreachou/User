@@ -33,6 +33,7 @@ class User:
 # create new instance
 user1 = User("Adam", "Smith", "adam.smith@gmail.com", "52")
 user2 = User("Maria", "Anderson", "manderson@yahoo.com", "32")
+user3 = User("Kevin", "Harris", "kevin.harris@hotmail.com", "21")
 
 
 # check display_info()
@@ -47,5 +48,8 @@ user2.enroll()   # check enroll() again -  output: User already a member
 
 # check spend_points()
 user1.spend_points(50)     # output: Your points are not enough
-user2.spend_points(100)
-user2.display_info()    # Gold card points reduces to 100
+user2.spend_points(80)
+
+user1.display_info()
+user2.display_info()    # Gold card points reduces to 120
+user3.display_info()
